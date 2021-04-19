@@ -16,6 +16,8 @@
 body{
     width: 100%;
 }
+
+/* NavBar */
 .nav{
     position: relative;
     
@@ -45,6 +47,7 @@ body{
     justify-content: space-around;
     color: white;
     font-weight: bold;
+    position: relative;
 }
 .second-sec-nav .left-ul{
     display: flex;
@@ -109,6 +112,8 @@ text-align: center;
 }
 
 
+
+/* Slider */
 .slider-main{
     width: 100%;
     height:30rem;
@@ -202,6 +207,7 @@ right:0.5%;
     display: none;
 }
 
+/* About-us */
 .aboutus-sec{
     display: flex;
     width: 100%;
@@ -234,8 +240,72 @@ right:0.5%;
     line-height: 110%;
 }
 
+@media only screen and (max-device-width:820px) {
+
+
+    #open-side-btn{
+        display: block !important;
+    }
+    .right-ul{
+        display: none !important;
+    }
+    .left-ul{
+        display: none !important;
+    }
+}
+
+/* Side Menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: var(--darkestBlue); /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+#open-side-btn{
+    position: absolute;
+    left: 0;
+    top: 25%;
+    width: 3%;
+    display: none;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: var(--orange);
+  display: block;
+  transition: 0.3s;
+  text-align: center;
+
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
 
 
 
-
-/* Login Styles */
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
