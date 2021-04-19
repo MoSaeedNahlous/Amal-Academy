@@ -242,7 +242,7 @@ right:0.5%;
 
 @media only screen and (max-device-width:820px) {
 
-
+    /* NavBar */
     #open-side-btn{
         display: block !important;
     }
@@ -251,6 +251,32 @@ right:0.5%;
     }
     .left-ul{
         display: none !important;
+    }
+
+    /* AboutUs */
+.aboutus-text{
+    margin-top: 15%;
+    font-size: 20px;
+    justify-content: center !important;
+    
+}
+.aboutus-sec-left{
+    width: 50%;
+    align-items: center;
+    margin: auto;
+}
+.aboutus-sec-right{
+    width: 50%;
+    align-items: center;
+    margin: auto;
+}
+
+
+}
+
+@media only screen and (max-device-width:700px) {
+    .aboutus-sec{
+        flex-direction: column-reverse;
     }
 }
 
