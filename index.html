@@ -25,7 +25,7 @@
             </ul>
             <div class="banner">
                 <div class="main-banner">
-                    <img src="./res/croped.png" alt="logo" width="150px" height="150px">
+                    <img src="./res/croped.png" alt="logo" width="90%" height="90%">
                 </div>
                 <div class="rotated">
                 </div>
@@ -45,8 +45,28 @@
         </div>
     </nav>
     <div class="slider-main">
-        <div class="left-arrow"> ◀ </div>
-        <div class="right-arrow"> ▶ </div>
+
+        <div class="slider-track-container">
+            <ul class="slider-track">
+                <li class="slider-slide current-slide">
+                    <img class="slider-image" src="./res/1.jpg" alt="">
+                </li>
+                <li class="slider-slide">
+                    <img class="slider-image" src="./res/2.jpg" alt="">
+                </li>
+                <li class="slider-slide">
+                    <img class="slider-image" src="./res/3.jpg" alt="">
+                </li>
+            </ul>
+        </div>
+        <button class="left-arrow is-hidden"> <img src="./res/left.svg" alt=""> </button>
+
+        <button class="right-arrow"> <img src="./res/right.svg" alt=""> </button>
+        <div class="slider-nav">
+            <button class="slider-indictor current-slide"></button>
+            <button class="slider-indictor"></button>
+            <button class="slider-indictor"></button>
+        </div>
     </div>
     <div class="aboutus-sec">
         <div class="aboutus-sec-left">
@@ -66,13 +86,12 @@
         <div class="aboutus-sec-right" data-aos="flip-down" data-aos-duration="1500">
             <img src="./res/aboutus.png" alt="about-us" width="100%" height="100%">
         </div>
-        <div>
-            <p>test</p>
-        </div>
+
 
     </div>
 
 </body>
+<script src="./scripts/sliderScript.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
