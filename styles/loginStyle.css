@@ -1,0 +1,18 @@
+:root{
+    --darkestBlue:#012761;
+    --darkerBlue:#26487A;
+    --blue:#0246AD;
+    --lightBlue:#0265FA;
+    --lighterBlue:#3666AD;
+    --lightestBlue:#A0C4FB;
+    --orange:#E89A00;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+body{
+    width: 100%;
+}
