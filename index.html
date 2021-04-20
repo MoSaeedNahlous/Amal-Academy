@@ -19,6 +19,9 @@
             <button>LOG IN</button>
         </div>
         <div class="second-sec-nav">
+            <button id="open-side-btn" onclick="openNav()">
+                <img src="./res/right.svg" alt="">
+            </button>
             <ul class="left-ul">
                 <li>Jobs</li>
                 <li>Creator</li>
@@ -43,7 +46,11 @@
             </ul>
 
         </div>
+
+
     </nav>
+
+
     <div class="slider-main">
 
         <div class="slider-track-container">
@@ -67,6 +74,15 @@
             <button class="slider-indictor"></button>
             <button class="slider-indictor"></button>
         </div>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a class="closebtn" onclick=closeNav()>&times;</a>
+        <a>Home</a>
+        <a>About Us</a>
+        <a>Courses</a>
+        <a>Creator</a>
+        <a>Jobs</a>
+
     </div>
     <div class="aboutus-sec">
         <div class="aboutus-sec-left">
@@ -93,6 +109,7 @@
 </body>
 <script src="./scripts/sliderScript.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="./scripts/sideMenuScript.js"></script>
 <script>
     AOS.init();
 </script>
