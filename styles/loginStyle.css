@@ -59,12 +59,13 @@ body {
 }
 .login-btn {
   width: 100%;
-  background-color: var(--lightBlue);
+  background-color: black;
   border-radius: 10px;
   font-size: 30px;
   height: 2em;
   padding-bottom: 10px;
+  color: white;
 }
 .logo img {
-  margin-left: 16%;
+  /* margin-left: 16%; */
 }
