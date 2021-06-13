@@ -16,6 +16,29 @@
 body{
     width: 100%;
 }
+footer{
+    display: grid;
+    grid-template-columns: 30% 24% 23% 23%  ;
+    grid-template-rows: 25% 40% 35%;
+    grid-template-areas: 
+    'logo privacy services aboutus'
+    'logo register services aboutus'
+    'logo contactus ourteam aboutus'
+    ;
+    width: 100%;
+    min-height:100px;
+    background-color: var(--lightBlue);
+    padding: 2%;
+    overflow: hidden;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
 
 /* NavBar */
 .nav{
@@ -41,7 +64,7 @@ body{
 }
 
 .second-sec-nav{
-    background-color:var(--blue);
+    background-color:var(--lightBlue);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -57,7 +80,7 @@ body{
     align-items: center;
 }
 .second-sec-nav .left-ul > li{
-    width: 50%;
+    width: 33.3%;
     text-align: center;
     font-size: 2em;
     
@@ -75,6 +98,38 @@ body{
 text-align: center;
     width: 33.3%;
      font-size: 2em;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    padding-top: 9%;
+    cursor: pointer;
+}
+
+
+
+.dropdown-list{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown:hover{
+    background-color: var(--darkestBlue);
+}
+.dropdown:hover .dropdown-list {display: block;}
+.dropdown-list a{
+    background-color: var(--darkerBlue);
+    border: 1px solid var(--lightestBlue);
+    display: block;
+}
+.dropdown-list a:hover{
+    background-color: var(--lightestBlue);
 }
 
 .banner{
@@ -406,6 +461,82 @@ right:0.5%;
     margin-top: 5%;
 }
 
+
+/*  */
+.footer-logo-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    grid-area: logo
+}
+.footer-logo-container img{
+    height:100%;
+    width:60%;
+
+}
+.privacy{
+    grid-area:privacy;
+}
+.aboutus{
+    grid-area: aboutus;
+}
+.services{
+    grid-area: services;
+}
+.ourteam{
+    grid-area: ourteam;
+}
+.register{
+    grid-area: register;
+}
+.contactus{
+    grid-area: contactus;
+}
+.logo{
+    grid-area: logo;
+}
+
+
+
+.list-title{
+    color: var(--darkestBlue);
+    font-size: 30px;
+    font-weight: 900;
+    text-decoration: underline;
+    
+}
+.footer-list-item{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+.footer-list-item:hover{
+    text-decoration: underline;
+    font-weight: 600;
+}
+.social-media-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.facebook{
+    color: #3b5998;
+    /* background-color: white; */
+}
+.twitter{
+    color: #1da1f2;
+}
+.yt{
+    color: #ff0000;
+}
+.insta{
+    color:#c32aa3
+}
+.whatsapp{
+    color: #25d366;
+}
+
 @media only screen and (max-device-width:808px) {
     .grid-cards-container{
         grid-template-columns: 1fr;
@@ -414,5 +545,109 @@ right:0.5%;
     }
     .more{
         margin-top: 9%;
+    }
+    .register{
+        padding-top:13%;
+    }
+}
+
+@media only screen and (max-device-width:1063px) {
+    footer{
+        grid-template-rows: 40% 25% 35%;
+        grid-template-columns: 40% 30% 30%;
+        grid-template-areas: 
+        "logo services aboutus"
+        "privacy register aboutus"
+        "contactus register ourteam";
+        gap: 5%;
+        
+    }
+    .privacy{
+        margin: auto;
+    }
+    .contactus{
+        margin:0 auto;
+    }
+    .register{
+        margin-top:10%;
+    }
+    
+}
+@media only screen and (max-device-width:789px) {
+    footer{
+        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+        "logo services"
+        "privacy aboutus"
+        " register aboutus"
+        "contactus ourteam";
+        gap: 1%;
+        min-height:1000px ;
+        
+    }
+    .privacy{
+        margin: auto;
+    }
+    .contactus{
+        margin:0 auto;
+    }
+    .register{
+        margin:0 auto;
+        padding-top: 0;
+    }
+    .aboutus{
+        padding-top:13%;
+        padding-left: 15%;
+    }
+    .ourteam{
+        padding-left: 15%;
+    }
+    .services{
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-device-width:531px) {
+    footer{
+        grid-template-rows: 15% 15% 10% 10% 25% 6% auto;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "logo"
+        "services"
+        "register"
+        "privacy"
+        "aboutus"
+        "ourteam"
+        "contactus";
+        
+        min-height:1000px ;
+        
+    }
+    .privacy{
+        margin: auto;
+        padding-left: 8%;
+    }
+    .contactus{
+        padding-top: 4%;
+        margin:0 auto;
+    }
+    .register{
+        margin:0 auto;
+        padding-top: 0;
+    }
+    .aboutus{
+        padding-top:0%;
+        padding-left: 0%;
+        margin: 0 auto;
+    }
+    .ourteam{
+        padding-top: 0%;
+        padding-left: 0%;
+        padding-right: 7%;
+        margin: 0 auto;
+    }
+    .services{
+        margin: 0 auto;
+        padding-left: 20%;
     }
 }

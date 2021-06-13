@@ -16,15 +16,17 @@
 <body>
     <nav>
         <div class="first-sec-nav">
-            <button>LOG IN</button>
+            <!-- <button>LOG IN</button> -->
+            <br>
+            <br>
         </div>
         <div class="second-sec-nav">
             <button id="open-side-btn" onclick="openNav()">
                 <img src="./res/right.svg" alt="">
             </button>
             <ul class="left-ul">
-                <li>Jobs</li>
-                <li>Creator</li>
+                <li class="dropdown">Register</li>
+                <li class="dropdown">Our team</li>
             </ul>
             <div class="banner">
                 <div class="main-banner">
@@ -34,13 +36,14 @@
                 </div>
             </div>
             <ul class="right-ul">
-                <li>
-                    Courses
+                <li class="dropdown">
+                    <a href="">Services</a>
+                    <div class="dropdown-list">
+                        <a href="">text</a>
+                        <a href="">text</a>
+                    </div>
                 </li>
-                <li>
-                    About Us
-                </li>
-                <li>
+                <li class="dropdown">
                     Home
                 </li>
             </ul>
@@ -157,10 +160,92 @@
         <h3 class="more">More...</h3>
     </div>
 
+    <footer>
+        <div class="footer-logo-container logo">
+            <img src="./res/croped.png" alt="" height="300px" width="300px">
+        </div>
+
+        <div class=" privacy">
+            <ul>
+                <li class="list-title">Policy & Privacy</li>
+                <li class="footer-list-item">Policy of privacy</li>
+                <li class="footer-list-item">Terms of use</li>
+            </ul>
+        </div>
+
+        <div class=" register">
+            <ul>
+                <li class="list-title">Register</li>
+                <li class="footer-list-item">Register terms</li>
+                <li class="footer-list-item">Common questions</li>
+                <li class="footer-list-item">Learning process</li>
+                <li class="footer-list-item">Register now</li>
+            </ul>
+        </div>
+
+        <div class=" contactus">
+            <ul>
+                <li class="list-title">Contact us</li>
+                <li class="footer-list-item">Administration</li>
+                <li class="footer-list-item">Our Social networks</li>
+                <li class="social-media-icons">
+                    <a href=""><i class="fab fa-facebook-square fa-2x facebook"></i></a>
+                    <a href=""><i class="fab fa-instagram-square fa-2x insta"></i></a>
+                    <a href=""><i class="fab fa-youtube fa-2x yt"></i></a>
+                    <a href=""><i class="fab fa-twitter-square fa-2x twitter"></i></a>
+                    <a href=""><i class="fab fa-whatsapp-square fa-2x whatsapp"></i></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class=" services">
+            <ul>
+                <li class="list-title">Services</li>
+                <li class="footer-list-item">Arabic language for childrens</li>
+                <li class="footer-list-item">Arabic language for non-natives</li>
+                <li class="footer-list-item">Islamic education</li>
+                <li class="footer-list-item">Entertainment</li>
+                <li class="footer-list-item">Sport</li>
+                <li class="footer-list-item">Learning tools</li>
+            </ul>
+        </div>
+
+        <div class=" ourteam">
+            <ul>
+                <li class="list-title">Our team</li>
+                <li class="footer-list-item">About the team</li>
+                <li class="footer-list-item">Careers</li>
+            </ul>
+        </div>
+
+        <div class=" aboutus">
+            <ul>
+                <li class="list-title">About us</li>
+                <li class="footer-list-item">About the platform</li>
+                <li class="footer-list-item">Project idea</li>
+                <li class="footer-list-item">Platform register</li>
+                <li class="footer-list-item">Organizational chart</li>
+                <li class="footer-list-item">Our vision</li>
+                <li class="footer-list-item">Our goals</li>
+                <li class="footer-list-item">Our future plans</li>
+                <li class="footer-list-item">Our humanity side</li>
+                <li class="footer-list-item">Our news</li>
+            </ul>
+        </div>
+
+
+
+
+    </footer>
+    <div>
+        <p>Created By:Robotic Minds 🇸🇾 </p>
+    </div>
+
 </body>
 <script src="./scripts/sliderScript.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="./scripts/sideMenuScript.js"></script>
+<script src="https://kit.fontawesome.com/d2407d80e4.js" crossorigin="anonymous"></script>
 <script>
     AOS.init();
 </script>
